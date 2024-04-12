@@ -1,11 +1,6 @@
 package org.eduardomaravill.classes;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -39,9 +34,9 @@ class SumTest {
 
     @Test
     void testOperationSumLong() {
-        long a = 10L;
-        long b = 10L;
-        assertEquals(20L, operation.operationSum(a,b));
+        long a = 100000000000000L;
+        long b = 100000000000000L;
+        assertEquals(200000000000000L, operation.operationSum(a,b));
         assertInstanceOf(Long.class,operation.operationSum(a,b));
     }
 }
